@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qustion 1</title>
+  </head>
+  <body>
+    <h1>
+      Find even Number from an array,make double of even elements and find array
+      length manually ?
+    </h1>
+    <script>
+      let NumberArray = [10, 12, 13, 19, 28, 56, 88, 100];
+      let newArr = [];
+        let count = 0;
+
+      for (let i = 0; i < NumberArray.length; i++) {
+        if (NumberArray[i] % 2 === 0) {
+            count++;
+          newArr.push(NumberArray[i]*2);
+        }
+      }
+    //   for (let i = 0; i < newArr.length; i++) {
+    //         newArr[i] = newArr[i] * 2;
+    //         count++;
+    //     }
+        console.warn(newArr);
+    </script>
+  </body>
+</html>
