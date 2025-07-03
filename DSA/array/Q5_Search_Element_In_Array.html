@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>search Element in array using linear search</title>
+  </head>
+  <body>
+    <h1>Search Element In Array Using Linear Search</h1>
+    <p id="elementText"></p>
+
+    <input type="text " placeholder="Enter Item number" id="item" />
+
+    <button
+      onclick="
+    searchItem()
+    "
+    >
+      search
+    </button>
+
+    <script>
+        function searchItem() {
+          let arr = [12, 33, 55, 34, 56, 75, 67, 59];
+          let index = undefined;
+          let item = parseInt(document.getElementById("item").value);
+          for (let i = 0; i <= arr.length - 1; i++) {
+            if (arr[i] === item) {
+              index = i;
+              break;
+            }
+          }
+          document.querySelector(
+            "#elementText"
+          ).innerHTML = `${item} item found at index ${index} `;
+          console.warn(index);
+        }
+
+    //   let arr = [12, 33, 55, 34, 56, 75, 67, 59];
+    //   let index = undefined;
+    //   //   let item = parseInt(document.getElementById("item").value);
+    //   let item = 33;
+    //   for (let i = 0; i <= arr.length - 1; i++) {
+    //     if (arr[i] === item) {
+    //       index = i;
+    //       break;
+    //     }
+    //   }
+    //   console.warn(index);
+    //   // this is search element function 
+    //   console.log(arr.indexOf(item));
+    //   // this is deleteing element function
+    //   console.log(arr.splice(4,3));
+    //   console.log(arr);
+      
+      
+
+    </script>
+  </body>
+</html>
