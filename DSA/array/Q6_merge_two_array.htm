@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>marge two array</title>
+  </head>
+  <body>
+    <h1>marge two array using for loop</h1>
+    <script>
+      let arr1 = [11, 22, 33, 44, 55];
+      let arr2 = [66, 67, 88, 59, 80];
+      let arr3 = [];
+
+      for (let i = 0; i < arr1.length; i++) {
+        arr3[i] = arr1[i];
+      }
+      for(let i = 0 ; i < arr2.length ; i++){
+        arr3[arr1.length+i] = arr2[i];
+      }
+      console.log(arr3);
+
+
+
+
+    </script>
+  </body>
+</html>
