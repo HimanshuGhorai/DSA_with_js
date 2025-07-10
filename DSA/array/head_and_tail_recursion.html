@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>head and tail Recursion</title>
+  </head>
+  <body>
+    <h1>Head and Tail recursion</h1>
+
+    <!-- js -->
+    <script>
+    //   function color() {
+    //     let data = 20;
+    //     console.warn(data);
+    //   }
+    //   function days() {
+    //     color();
+    //   }
+    //   function fruits() {
+    //     days();
+    //   }
+    //   function topFunction() {
+    //     fruits();
+    //   }
+    //   topFunction();
+
+    function test(x){
+        // Head Recursion
+        // console.warn(x)
+        if(x>0){
+            test(x-1)
+        }
+        // Tail Recursion
+        console.warn(x);
+        
+    }
+let data = 5;
+
+test(data);
+
+    </script>
+  </body>
+</html>
