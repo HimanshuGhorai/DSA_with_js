@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reverse array with recursion</title>
+  </head>
+  <body>
+    <h1>reverse array with recursion</h1>
+
+    <script>
+      let array = [12, 44, 65, 85, 75, 77];
+      console.log(array);
+      let temp;
+      function reverse(array, start, end) {
+        console.warn(array);
+        if (start <= end) {
+          temp = array[start];
+          array[start] = array[end];
+          array[end] = temp;
+          reverse(array, start + 1, end - 1);
+        }
+      }
+      reverse(array, 0, array.length - 1);
+    </script>
+  </body>
+</html>
