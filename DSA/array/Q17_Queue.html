@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Queue in java script</title>
+  </head>
+  <body>
+    <h1>Queue in java script</h1>
+
+    <script>
+      let arr = [];
+      let currentSize = arr.length;
+      let maxSize = 5;
+
+      function enqueue(newVal) {
+        if (currentSize >= maxSize) {
+          alert("queue is alrady full");
+        } else {
+          arr[currentSize] = newVal;
+          currentSize++;
+        }
+      }
+
+      function dequeue() {
+        if (currentSize > 0) {
+          for (let i = 0; i < arr.length; i++) {
+            arr[i] = arr[i + 1];
+          }
+          currentSize--;
+          currentSize.length = currentSize;
+        } else {
+          alert("this Queue is alrady empty");
+        }
+      }
+
+      function display() {
+        console.warn(arr);
+      }
+      enqueue(55);
+      enqueue(56);
+      enqueue(57);
+      enqueue(58);
+      enqueue(59);
+      dequeue();
+      enqueue(60);
+      display();
+    </script>
+  </body>
+</html>
